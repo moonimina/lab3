@@ -67,7 +67,8 @@ for l in n_:
     key_hash_simple = simple_func(key_n)
     for f in table_simple[key_hash_simple]:
         if f.prod_name == key_n:
-            print(f.prod_name)
+            #print(f.prod_name)
+            break
     # time_end = time.time() - time_start
     time_end = timeit.default_timer() - time_start
     t_simple.append(time_end)
@@ -77,7 +78,8 @@ for l in n_:
     key_hash_compl = compl_func(key_n)
     for r in table_compl[key_hash_compl]:
         if r.prod_name == key_n:
-            print(r.prod_name)
+            # print(r.prod_name)
+            break
     time_end = timeit.default_timer() - time_start
     # time_end = time.time() - time_start
     t_compl.append(time_end)
