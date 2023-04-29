@@ -1,8 +1,8 @@
 def simple_func(name):
     hash_ = 0
     for i in range(0, len(name)):
-        hash_ = (hash_ + ord(name[i]) * 17) * 3 + 2000
-    return hash_
+        hash_ = (hash_ + ord(name[i]) ** 5) // 2000
+    return hash_ % 4294967295
 
 
 def compl_func(name):  # rs
